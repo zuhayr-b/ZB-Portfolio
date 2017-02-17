@@ -1,0 +1,103 @@
+/*GLOBAL*/
+@@font-face {
+  font-family: Norwester;
+  src: url(../fonts/norwester.woff);
+}
+@@font-face {
+  font-family: Kilogram;
+  src: url(../fonts/KiloGram_KG.otf);
+}
+body {
+  font: 16px/24px Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-colour: #efefef;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+/*section {
+  padding: 0;
+  margin: 0;
+}*/
+
+ul {
+  padding: 0;
+  margin:0;
+}
+h2 {
+  text-align: center;
+}
+/*Header*/
+header {
+  background: #f4f4f4;
+  color: #efefef;
+  padding: 36px 0 24px 0;
+  min-height: 80px;
+  border-bottom: 1px solid;
+}
+header a {
+  font-family: Norwester;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+  header a:hover {
+    color: #249bb4;
+  }
+
+  header li {
+    display: inline;
+    float: left;
+    padding: 0 24px;
+    margin: 0;
+  }
+  header nav {
+    float:right;
+    margin-top: 10px;
+  }
+  header #branding{
+    float:left;
+    text-align: right;
+  }
+
+  header #branding a{
+    font-family: Kilogram;
+    font-size: 48px;
+  }
+  header #branding h3 {
+    padding:0;
+    margin:0;
+    text-align: right;
+    font-family: Norwester;
+    font-style: italic;
+    font-size: 20px;
+    color: white;
+  }
+
+/*Cover section*/
+
+/*Portfolio styling*/
+
+/*About styling*/
+.box-4 {
+  border: 2px solid #249bb4;
+  width: 340px;
+  min-width: 240px;
+  height: auto;
+  padding: 10px 10px;
+  margin: 0px 10 24px 10px;
+  /*display: inline-block;*/
+  float: left;
+  text-align: center;
+}
+  .box-4 h3 {
+    font-size: 20px;
+  }
+  .box-4 p{
+    padding:0;
+    margin:0;
+  }
