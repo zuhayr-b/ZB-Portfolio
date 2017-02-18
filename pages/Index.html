@@ -19,7 +19,9 @@
     <title>Zuhayr Binkhalid | Web Designer and Developer</title>
 
     <!--scripts-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+    <script src="../scripts/jquery-3.1.1.js"></script>
+    <script src="../scripts/main.js"></script>
     <!--insert favicon here-->
     <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="../images/favicon-32x32.png" sizes="32x32">
@@ -36,25 +38,40 @@
     <header>
       <div class="container">
         <div id="branding">
+          <ul class="toggle-menu-icon">
+            <li>
+              <a href="javascript:void(0);" onclick="toggleMenu()">
+              <img src="../images/menu-icon.png" alt="Menu" /></a>
+            </li>
+          </ul>
           <a href="index.html"><span>z</span>UhAYR <span>B</span>inKhALID</a>
           <!-- <a href="index.html">ZUhAYR BinKhALID</a> -->
           <h3>Web Designer and Developer</h3>
           <!--<a href="index.html"><img src="../images/logo.png" alt="Logo"></a>-->
         </div>
 
-        <nav>
+        <nav class="normal">
           <ul>
             <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#Portfolio">Portfolio</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="mobile" id="mobileNav">
+          <ul>
+            <li><a href="#home"><img src="../images/home-icon.png" /></a></li>
+            <li><a href="#about"><img src="../images/about-icon.png" /></a></li>
+            <li><a href="#portfolio"><img src="../images/portfolio-icon.png" /></a></li>
+            <li><a href="#contact"><img src="../images/contact-icon.png" /></a></li>
           </ul>
         </nav>
       </div>
 
     </header>
-    <!--Banner area-->
-    <!-- <div class="homepage-hero-module">
+    <!-- Banner area-->
+    <!--<div class="homepage-hero-module">
       <div class="video-container">
         <div class="filter"></div>
         <video autoplay loop class="fillWidth">
@@ -65,10 +82,8 @@
           <img src="../coverr/Aloha-Mundo.jpg" alt="">
         </div>
       </div>
-    </div> -->
-
+    </div>-->
     <!--MAIN BODY STARTS HERE-->
-
     <section id="home">
       <div class="container">
         <h1>Affordable, Professional Web Design</h1>
@@ -82,13 +97,7 @@
       </div>
     <hr />
     </section>
-    <!--portfolio area-->
-    <section id="portfolio">
-      <div class="container">
-        <div class="sectionTitle"><h2> Portfolio </h2></div>
-      </div>
-    <hr />
-    </section>
+
     <!--about section-->
     <section id="about">
       <div class="container">
@@ -132,9 +141,15 @@
         </div>
 
       </div>
-
     </section>
     <hr />
+    <!--portfolio area-->
+    <section id="portfolio">
+      <div class="container">
+        <div class="sectionTitle"><h2> Portfolio </h2></div>
+      </div>
+    <hr />
+    </section>
     <!--contact form-->
     <section id="contact">
       <div class="container">
@@ -143,18 +158,11 @@
           <form action="../forms/contactForm.php" method="post">
             <input type="name" name="name" placeholder="Name..." required />
             <input type="email" name="email" placeholder="Email..." required />
-            <textarea name="query" placeholder="What would you like to know?"></textarea>
+            <textarea name="query" placeholder="Message..."></textarea>
             <br />
             <button class="btn1" type="submit">Submit</button>
           </form>
         </div>
-        <!-- <form class="contactForm" action="contactForm.php" method="post">
-          <input type="name" name="name" placeholder="Name..." required />
-          <input type="email" name="email" placeholder="Email..." required />
-          <textarea name="query" placeholder="What would you like to know?"></textarea>
-          <br />
-          <button class="btn1" type="submit">Submit</button>
-        </form> -->
       </div>
 
     </section>
@@ -162,9 +170,12 @@
     <!--footer-->
     <footer>
       <div class="container">
-        <a href="http://www.facebook.com"><img src="../images/facebook.png"></a>
-        <a href="http://www.twitter.com"><img src="../images/twitter.png"></a>
-        <a href="http://www.linkedin.com"><img src="../images/linkedin.png"></a>
+        <a href="http://www.facebook.com"><img src="../images/facebook.png" onmouseover="this.src='../images/facebook-over.png'"
+          onmouseout="this.src='../images/facebook.png'" alt="Facebook"></a>
+        <a href="http://www.twitter.com"><img src="../images/twitter.png" onmouseover="this.src='../images/twitter-over.png'"
+          onmouseout="this.src='../images/twitter.png'" alt="Twitter"></a>
+        <a href="http://www.linkedin.com"><img src="../images/linkedin.png" onmouseover="this.src='../images/linkedin-over.png'"
+          onmouseout="this.src='../images/linkedin.png'" alt="LinkedIn"></a>
         <p>&copy; Zuhayr Binkhalid 2017</p>
       </div>
 
@@ -172,6 +183,7 @@
 
     <!--scripts-->
     <script src="../scripts/coverr.js"></script>
+
 
   </body>
 
