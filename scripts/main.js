@@ -1,5 +1,4 @@
-//mobile menu //
-
+//mobile navigation menu
 function toggleMenu() {
   var x = document.getElementById('mobileNav');
   if (x.style.display === "inline-block") {
@@ -8,3 +7,5 @@ function toggleMenu() {
     x.style.display = "inline-block";
   }
 }
+
+//scroll menu animation
