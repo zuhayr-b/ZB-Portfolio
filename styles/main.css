@@ -1,39 +1,49 @@
 /*GLOBAL*/
+/*font imports*/
 @@font-face {
   font-family: Norwester;
-  src: url(../fonts/norwester.woff);
+  src: url(../fonts/norwester.woff);;
 }
 @@font-face {
   font-family: Kilogram;
   src: url(../fonts/KiloGram_KG.otf);
 }
+
 body {
   font: 16px/24px Helvetica, Arial sans-serif;
   padding: 0;
   margin: 0;
-  background-colour: #efefef;
+  background-color: white;
+}
+p {
+  font-family: "Roboto", sans-serif;
 }
 .container {
   width: 80%;
   margin: auto;
-  overflow: hidden;
+  overflow:inherit;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   box-shadow: 0 4px 4px -4px rgba(0,0,0,.4);
 }
 .sectionTitle{
   width: 20%;
   margin: auto;
-  overflow: hidden;
+  /*overflow: auto;*/
+  position:relative;
+  top: -50px;
+  background-color: white;
+  box-shadow: 5px 0 5px white, -5px 0 5px white;
+  margin-bottom: -50px;
 }
 .sectionTitle h2{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
   text-transform: uppercase;
   text-align: center;
   /*font-weight: 400;*/
   padding: 15px;
   color: #249bb4;
-  border-bottom: 3px solid #249bb4;
 }
 ul {
   padding: 0;
@@ -43,7 +53,6 @@ hr {
     display: none;
     height: 1px;
     border: 0;
-    /*border-top: 1px solid rgba(36,155,180,.7);*/
     box-shadow: 0 0px 2px rgba(0,0,0,.2);
     width: 80%;
     margin: 10px 0;
@@ -54,57 +63,60 @@ hr {
 header .container {
   overflow: visible;
   box-shadow: none;
+  margin-top:0;
 }
+
 header {
-  background: gray;
+  /*background: #1c8a8b;*/
   color: #efefef;
   padding: 36px 0 24px 0;
   width: 100%;
-  min-height: 80px;
+  max-height: 90px;
   border-bottom: 1px solid;
   position: fixed;
   top:0;
   z-index: 1;
+  vertical-align: middle;
 }
 
 header a {
-  font-family: Norwester;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 14pt;
   -webkit- transition: color 1s ease-in-out;
   transition: color 1s ease-in-out;
 }
   header a:hover {
-    color: #249bb4;
+    color:rgba(255, 255, 255, 0.5);
   }
 /*normal menu*/
   header nav.normal{
+  float: right;
   }
   header nav.normal ul {
-    padding-top: 10px;
+    /*padding-top: 10px;*/
+    padding-top: 2px;
     float: right;
   }
   header nav.normal ul li {
     display: inline;
     padding: 0 24px;
-    padding-bottom: 60px;
+    padding-bottom: 17px;
     margin: 0;
   }
   header nav.normal ul li a {
-    padding-bottom: 60px;
+    padding-bottom: 17px;
     margin:0;
-    -webkit- transition: color 1s ease-in;
+    -webkit- transition: color 1s;
     transition: color 1s ease-in;
   }
   header nav.normal ul li a:hover {
-    border-bottom: 3px solid #249bb4;
-    color: #249bb4;
+    color:rgba(255, 255, 255, 0.5);
+    border-bottom: 3px solid white;
   }
-  /*header nav.normal ul li a:active {
-    border-bottom: 3px solid #249bb4;
-  }*/
 
 /*toggle menu icon*/
 header ul.toggle-menu-icon{
@@ -140,10 +152,10 @@ header nav.mobile ul li a {
   margin:0;
 }
 
-
 /*logo style*/
   header #branding{
-    padding-top: 10px;
+    /*padding-top: 10px;*/
+    padding-top: 2px;
     float:left;
     text-align: right;
   }
@@ -163,19 +175,17 @@ header nav.mobile ul li a {
     display: none;
   }
   header #branding a{
-    /*font-family: Kilogram;*/
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-    font-size: 44px;
+    font-family: "Lato", sans-serif;
+    font-weight:100;
+    font-size: 44pt;
     text-transform: uppercase;
+    letter-spacing: 1px;
   }
   header #branding a span{
-    font-family: Kilogram;
-    /*font-family: 'Oswald', sans-serif;*/
-    font-weight: bold;
-    font-size: 54px;
-    text-transform: none;
-    text-shadow: 1px 1px 1px black;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-size: 44pt;
+    text-transform: uppercase;
   }
   header #branding h3 {
     padding:0;
@@ -186,30 +196,55 @@ header nav.mobile ul li a {
     font-size: 20px;
     color: white;
   }
-
 /*Home - banner section */
 #home .container {
   box-shadow:none;
 }
 #home {
   /*background-color: gray;*/
-  background: url("../images/banner-bg.png") no-repeat 0 -200px;
-  min-height: 600px;
+  /*background: url("../images/banner-bg.png") no-repeat 0 -400px;*/
+  top: 0;
+  /*min-height: 400px;*/
   text-align: center;
+  /*second bg*/
+  background: url("../images/banner-bg2.png") no-repeat 0 -400px;
+  min-height: 600px;
 }
 #home h1 {
-  font-family: 'Oswald', sans-serif;
+  /*font-family: 'Oswald', sans-serif;*/
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 44px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   padding-top: 200px;
   /*text-align: center;*/
-  color: rgba(240,240,240,0.9);
+  /*color: rgba(240,240,240,0.9);*/
+  color: white;
 }
 #home p {
-  font-family: Helvetica, sans-serif;
-  font-size: 16px;
-  color: rgba(240,240,240,0.9);
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 28px;
+  line-height: 28px;
+  color: white;
+  /*color: rgba(240,240,240,0.6);*/
+}
+#home a{
+  font-family: "Roboto", sans-serif;
+  /*text-decoration: none;*/
+  text-decoration-style: dashed;
+  text-decoration-color: blue;
+  font-size: 28px;
+  line-height: 28px;
+  color: rgba(240,240,240,0.6);
+  -webkit-transition: color 1s ease-in-out;
+  transition: color 1s ease-in-out;
+}
+#home a:hover{
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  line-height: 28px;
+  color:  #d3ebf0;
 }
 
 /*Cover section*/
@@ -254,7 +289,9 @@ header nav.mobile ul li a {
   }
 
 /*Contact Styling*/
-
+#contact .container{
+  padding-bottom: 10px;
+}
 .contactForm {
   width: 100%;
   margin: auto;
@@ -270,6 +307,9 @@ header nav.mobile ul li a {
     height: 50px;
     color: #888888;
     vertical-align: top;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #d3ebf0;
   }
   .contactForm input {
     margin: 10px;
@@ -278,10 +318,14 @@ header nav.mobile ul li a {
     height: 50px;
     color: #888888;
     vertical-align: top;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #d3ebf0;
   }
+
   .btn1 {
     margin: 10px;
-    background-color: #f4f4f4;
+    background-color: #f3f3f3;
     color: #249bb4;
     border: 2px solid #249bb4;
     border-radius: 10px;
@@ -297,9 +341,13 @@ header nav.mobile ul li a {
     border-radius: 10px;
     padding: 10px 20px;
   }
-  /*footer styling */
+/*footer styling */
+footer {
+  background-color: #f4f4f4;
+}
 footer .container {
   padding-top: 20px;
+  padding-bottom: 0px;
 }
   footer img {
     width : 32px;
@@ -323,33 +371,100 @@ footer .container {
     padding:0;
     margin:0;
   }
-/*Responsve Styling*/
-/*styling for tablet, mobile etc.*/
+
+
+/*----------------Responsve Styling---------------------------------------*/
+/*medium sized screens*/
+@media(max-width: 1400px){
+  header #branding a{
+    font-size:38pt;
+  }
+  header #branding a span{
+    font-size: 38pt;
+  }
+  #branding h3 {
+    display:none;
+  }
+  header nav.normal ul li{
+    padding: 0 12px;
+  }
+  header nav.normal ul li a{
+    font-size: 12pt;
+    padding-bottom: 20px;
+  }
+  #home h1{
+    font-size: 42px;
+    line-height:44px;
+  }
+}
+/* styling for smaller desktop screens*/
+@media(max-width: 1110px){
+  header #branding a{
+    font-size:20pt;
+  }
+  header #branding a span{
+    font-size: 20pt;
+  }
+  #branding h3 {
+    display:none;
+  }
+  header nav.normal ul li{
+    padding: 0 10px;
+  }
+  header nav.normal ul li a{
+    font-size: 10pt;
+    padding-bottom: 20px;
+  }
+  #home h1{
+    padding-top: 120px;
+    font-size: 42px;
+    line-height:44px;
+  }
+  #home p{
+    padding-top:10px;
+    font-size: 22px;
+    line-height: 24px;
+  }
+  #home a{
+    font-size: 22px;
+    line-height: 24px;
+  }
+  #home a:hover{
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .sectionTitle{
+    width: 30%;
+    box-shadow: 5px 0 5px white, -5px 0 5px white;
+  }
+}
+
+/*+++++++++++++styling for tablet, mobile etc.*/
 @media(max-width: 768px){
   header nav.mobile,
   header nav.mobile li{
     float:none;
     text-align:center;
     width: 100%;
-    /*padding-bottom: 5px;*/
   }
   header {
     background-color: #249bb4;
     border-bottom: 1px solid white;
     padding: 10px;
+    max-height: 150px;
+  }
+  header .container {
+    padding-bottom: 10px;
   }
   header #branding{
     float:none;
     padding-bottom: 5px;
   }
-  header a:hover {
-    color: white;
-  }
   header #branding a{
-    font-size:28px
+    font-size:20pt;
   }
   header #branding a span{
-    font-size: 40px;
+    font-size: 20pt;
   }
   header #branding ul.toggle-menu-icon li{
     display: inline;
@@ -357,22 +472,36 @@ footer .container {
   header #mobileNav{
     display: none;
   }
-  #home h1{
-    float:right;
-    padding-top: 80px;
-    font-size: 32px;
-    line-height:34px;
-  }
   #branding h3,
   header nav.normal{
     display: none;
   }
   #home {
     min-height: 450px;
-    background-position: -1200px -400px;
+    background-position: -1000px -300px;
+  }
+  #home h1{
+    float:right;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    font-size: 32px;
+    line-height:34px;
+  }
+  #home p{
+    font-size: 22px;
+    line-height: 24px;
+  }
+  #home a{
+    font-size: 22px;
+    line-height: 24px;
+  }
+  #home a:hover{
+    font-size: 22px;
+    line-height: 24px;
   }
   .sectionTitle{
-    width: 50%;
+    width: 40%;
+    box-shadow: 5px 0 5px white, -5px 0 5px white;
   }
   .box-4{
     width: 80%;
@@ -384,5 +513,37 @@ footer .container {
     width: 40%;
   }
 
-
+}
+/*+++++++++styling for smaller phones*/
+@media(max-width: 450px){
+  header #branding a{
+    font-size:15pt;
+  }
+  header #branding a span{
+    font-size: 15pt;
+  }
+  header {
+    max-height: 120px;
+  }
+  .sectionTitle{
+    width: 50%;
+    box-shadow: 5px 0 5px white, -5px 0 5px white;
+  }
+}
+/*+++++++++++styling for smallest phones*/
+@media(max-width: 360px){
+  header #branding a{
+    font-size:13pt;
+  }
+  header #branding a span{
+    font-size: 13pt;
+  }
+  header {
+    max-height: 120px;
+  }
+  .sectionTitle{
+    padding: 0;
+    width: 65%;
+    box-shadow: 5px 0 5px white, -5px 0 5px white;
+  }
 }
