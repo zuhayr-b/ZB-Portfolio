@@ -2,7 +2,7 @@
 /*font imports*/
 @@font-face {
   font-family: Norwester;
-  src: url(../fonts/norwester.woff);;
+  src: url(../fonts/norwester.woff);
 }
 @@font-face {
   font-family: Kilogram;
@@ -67,7 +67,7 @@ header .container {
 }
 
 header {
-  background: #1c8a8b;
+  /*background: #1c8a8b;*/
   color: #efefef;
   padding: 38px 0 24px 0;
   width: 100%;
