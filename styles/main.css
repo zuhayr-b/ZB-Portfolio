@@ -1,14 +1,4 @@
 /*GLOBAL*/
-/*font imports*/
-@@font-face {
-  font-family: Norwester;
-  src: url(../fonts/norwester.woff);
-}
-@@font-face {
-  font-family: Kilogram;
-  src: url(../fonts/KiloGram_KG.otf);
-}
-
 body {
   font: 16px/24px Helvetica, Arial sans-serif;
   padding: 0;
@@ -17,6 +7,7 @@ body {
 }
 p {
   font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 .container {
   width: 80%;
@@ -41,7 +32,6 @@ p {
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
-  /*font-weight: 400;*/
   padding: 15px;
   color: #249bb4;
 }
@@ -86,8 +76,9 @@ header a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14pt;
-  -webkit-transition: color 1s ease-in-out;
-  transition: color 1s ease-in-out;
+  -webkit-transition: color 1s linear;
+  transition: color 1s linear;
+
 }
   header a:hover {
     color:rgba(255, 255, 255, 0.5);
@@ -191,15 +182,6 @@ header nav.mobile ul li a {
     font-size: 44pt;
     text-transform: uppercase;
   }
-  header #branding h3 {
-    padding:0;
-    margin:0;
-    text-align: right;
-    font-family: Norwester;
-    font-style: italic;
-    font-size: 20px;
-    color: white;
-  }
 /*Home - banner section */
 #home .container {
   box-shadow:none;
@@ -229,7 +211,7 @@ header nav.mobile ul li a {
 }
 #home p {
   font-family: "Roboto", sans-serif;
-  font-weight: 200;
+  font-weight: normal;
   font-size: 28px;
   line-height: 28px;
   color: white;
@@ -257,6 +239,12 @@ header nav.mobile ul li a {
 /*Cover section*/
 
 /*Portfolio styling*/
+/*#portfolio .container {
+  box-shadow: none;
+  margin-bottom: -40px;
+}*/
+
+
 
 /*About styling*/
 .box-4 {
@@ -285,14 +273,14 @@ header nav.mobile ul li a {
     position: relative;
     top: -1px;
   }
-  .box-4 h3 {
-    font-size: 20px;
-    font-family: Norwester;
-    font-weight: 600;
-  }
   .box-4 p{
     padding:0;
     margin:0;
+  }
+  .box-4 h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    /*text-transform: uppercase;*/
   }
 
 /*Contact Styling*/
