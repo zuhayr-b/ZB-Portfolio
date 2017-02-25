@@ -67,6 +67,16 @@ header {
   top:0;
   z-index: 1;
   vertical-align: middle;
+  overflow: hidden;
+  -webkit-transition: display 0.5s;
+  -moz-transition: display 0.5s;
+  transition: display 0.5s;
+}
+header.fadeaway {
+  display: none;
+}
+header.fadein {
+  background-color: #249bb4;
 }
 
 header a {
@@ -198,15 +208,12 @@ header nav.mobile ul li a {
   background-attachment: fixed;
 }
 #home h1 {
-  /*font-family: 'Oswald', sans-serif;*/
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 44px;
-  /*text-transform: uppercase;*/
   padding-top: 200px;
   padding-bottom: 100px;
-  /*text-align: center;*/
-  /*color: rgba(240,240,240,0.9);*/
+  margin-top:0;
   color: white;
 }
 #home p {
@@ -236,21 +243,43 @@ header nav.mobile ul li a {
   color:  white;
 }
 
-/*Cover section*/
-
 /*Portfolio styling*/
-/*#portfolio .container {
-  box-shadow: none;
-  margin-bottom: -40px;
-}*/
-
-
-
-/*About styling*/
-.box-4 {
-  /*box-shadow: 0px 0 0 2px rgba(36,155,180,.1), 0 2px 3px rgba(0,0,0,.2);*/
+/* refer to component.css stylesheet*/
+.box-2 {
   box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 3px rgba(0,0,0,.2);
-  /*border: 3px solid rgb(36,155,180);*/
+  border-radius: 5px;
+  background-color: #d3ebf0;
+  width: 40%;
+  min-width: 30%;
+  height: 100%;
+  /*height: auto;*/
+  padding: 0px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+  display: inline-block;
+  -webkit- transition: box-shadow 1s;
+  transition: box-shadow 1s;
+}
+.box-2:hover {
+  box-shadow: 0 0 0 3px #249bb4, 0 4px 6px #249bb4;
+}
+  .box-2 .icons {
+    position: relative;
+    top: -1px;
+    height: 186px;
+    width: auto;
+  }
+  .box-2 p{
+    padding:0;
+    margin:0;
+  }
+  .box-2 h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+/*About styling*/
+/*.box-4 {
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 3px rgba(0,0,0,.2);
   border-radius: 5px;
   background-color: #d3ebf0;
   width: 340px;
@@ -264,10 +293,7 @@ header nav.mobile ul li a {
   transition: box-shadow 1s;
 }
 .box-4:hover {
-  /*box-shadow: 0px 0 0 2px rgba(0,0,0,.1), 0 4px 6px rgba(0,0,0,.2);*/
   box-shadow: 0 0 0 3px #249bb4, 0 4px 6px #249bb4;
-  height: auto;
-  /*border: 3px solid rgb(36,155,180);*/
 }
   .box-4 .icons {
     position: relative;
@@ -280,8 +306,7 @@ header nav.mobile ul li a {
   .box-4 h3{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    /*text-transform: uppercase;*/
-  }
+  }*/
 
 /*Contact Styling*/
 #contact .container{
@@ -434,7 +459,7 @@ footer .container {
     width: 90%;
   }
   .contactForm input {
-    width: 40%;
+    width: 43%;
   }
 }
 
@@ -504,14 +529,14 @@ footer .container {
     width: 40%;
     box-shadow: 5px 0 5px white, -5px 0 5px white;
   }
-  .box-4{
+  .box-2{
     width: 80%;
   }
   .contactForm textarea {
     width: 90%;
   }
   .contactForm input {
-    width: 40%;
+    width: 43%;
   }
 
 }

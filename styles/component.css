@@ -170,7 +170,7 @@
 	background: #fff;
 	border: 50px solid #fff;
 	/*overflow: hidden;*/
-	overflow-y: scroll;
+	overflow-y: auto;
 	overflow-x: auto;
 }
 
