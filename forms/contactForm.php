@@ -5,7 +5,7 @@
   $contactQuery = $_POST['query'];
 
   //variables for the mail function
-  $to = 'itsddhd@gmail.com';
+  $to = 'contact@zuhayr-b.co.uk';
   $subject = 'My Website Contacted by -  '.$contactName;
   $mailMessage = "You were contacted by ".$contactName."      Their Email: ".$contactEmail."\r\n
   About them: ".$contactDesc."\n
