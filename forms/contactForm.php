@@ -14,7 +14,7 @@
   $headers = 'From: '.$contactEmail;
 
   mail($to,$subject,$mailMessage,$headers);
-  header('Location:../pages/index.html');
+  header('Location:index.html');
   exit;
 
 ?>
