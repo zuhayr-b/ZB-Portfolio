@@ -14,13 +14,13 @@ var images = [];
 var images2 = [];
 var time = 3000;
 //
-images[0] = "../images/HTML5.png";
-images[1] = "../images/CSS3.png";
-images[2] = "../images/Javascript.png";
+images[0] = "./images/HTML5.png";
+images[1] = "./images/CSS3.png";
+images[2] = "./images/Javascript.png";
 
-images2[0] = "../images/graphic.png";
-images2[1] = "../images/web-design.png";
-images2[2] = "../images/photoshop.png";
+images2[0] = "./images/graphic.png";
+images2[1] = "./images/web-design.png";
+images2[2] = "./images/photoshop.png";
 
 function changeImg(){
   document.skillslide.src = images[i];
