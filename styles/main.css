@@ -125,6 +125,9 @@ header ul.toggle-menu-icon li{
   margin:0;
   display: inline;
 }
+header ul.toggle-menu-icon li a img:hover{
+  background:none;
+}
 
 /* mobile menu*/
 header #mobileNav{
@@ -147,6 +150,9 @@ header nav.mobile ul li {
 header nav.mobile ul li a {
   padding-bottom: 60px;
   margin:0;
+}
+header nav.mobile ul li a img:hover {
+  background:none;
 }
 
 /*logo style*/
